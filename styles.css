@@ -1,0 +1,130 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+body {
+    background-color: #f5efe6; /* Parchment color */
+    color: #5b432f; /* Dark brown for text */
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(86, 52, 33, 0.9); /* Deep brown */
+    padding: 15px 25px;
+    border-bottom: 3px solid #e4c694; /* Antique gold */
+}
+header h1 {
+    font-size: 28px;
+    color: #ded4c9; /* Light parchment */
+    font-family: 'EB Garamond', serif;
+}
+header nav a {
+    color: #f4e9db;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+header nav a:hover {
+    color: #d4a373; /* Warm vintage gold */
+}
+
+/* Hero Section */
+.welcome {
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url("/header-books.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+.welcome h2 {
+    font-size: 36px;
+    font-family: 'Playfair Display', serif;
+    color: #f3debe;
+}
+.welcome p {
+    font-size: 20px;
+    font-family: 'EB Garamond', serif;
+    color: #f5efe7;
+}
+
+/* Search Bar */
+.search-container {
+    text-align: center;
+    margin: 30px 0;
+}
+.search-container input {
+    padding: 12px;
+    width: 320px;
+    border: 2px solid #a67c52;
+    border-radius: 5px;
+    background-color: #f5efe6;
+    color: #745b48;
+    font-size: 16px;
+}
+.search-container button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8d6339;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.search-container button:hover {
+    background-color: #3a2b21d7;
+    transform: scale(1.1);
+}
+
+/* Book Cards */
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    padding: 30px;
+    background-color: #e8dec8; /* Aged paper */
+}
+.book-card {
+    background-color: #f2e9de; /* Warm aged paper */
+    padding: 20px;
+    border: 2px solid #a67c52; /* Antique brown */
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.book-card:hover {
+    transform: scale(1.05);
+}
+.book-card button {
+    padding: 7px 15px;
+    border-radius: 6px;
+    background-color: #a67c52;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+.book-card button:hover {
+    background-color: #2a1b12;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(88, 66, 53, 0.9);
+    color: #f4e1c9;
+}
